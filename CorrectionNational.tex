@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{amsmath} % for mathematical environments and symbols
+
+% Adjusting margins
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Title, author, date
+\title{Correction National 2024}
+\author{Yassine El Aidous}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Ce document propose une correction de l'examen national.
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{Exercice 1 : Analyse}
+
+On considère une fonction \( f \) définie sur \( [1, +\infty[ \) par :
+\[
+f(x) = 
+\begin{cases}
+    \frac{\ln x}{x^2 - 1} & \text{si } x > 1 \\
+    \frac{1}{2} & \text{si } x = 1
+\end{cases}
+\]
+Soit \( (C) \) la courbe représentative de la fonction \( f \) dans un repère orthogonal \( (O, \vec{\mathbf{i}}, \vec{\mathbf{j}}) \).
+
+\hrulefill % Horizontal line as a divider
+
+\subsubsection*{1- Montrer que \( f \) est continue à droite en 1}
+
+Soit \( x \in ]1; +\infty[ \)
+\[
+\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} \frac{\ln x}{x^2 - 1} = \lim_{x \to 1^+} \frac{\ln x}{(x-1)(x+1)} = \frac{1}{2} \quad (\text{car } \lim_{x \to 1^+} \frac{\ln x}{x-1} = 1)
+\]
+
+\hrulefill % Horizontal line as a divider
+
+\subsubsection*{2 - Calculer \( \lim_{x \to +\infty} f(x) \) et interpréter graphiquement le résultat obtenu}
+
+Soit \( x \in ]1;+\infty[ \)
+\[
+\lim_{x \to +\infty} f(x) = \lim_{x \to +\infty} \frac{\ln x}{x^2 - 1} = 0 \quad (\text{car } \lim_{x \to +\infty} \frac{\ln x}{x^2} = 0)
+\]
+
+\subsubsection*{Interprétation Graphique}
+
+\begin{itemize}
+    \item La courbe \( (C) \) admet une asymptote horizontale au voisinage de \( +\infty \) de direction l'axe des abscisses.
+\end{itemize}
+
+\hrulefill % Horizontal line as a divider
+
+\subsubsection*{3- Vérifier que \( \frac{ 1- x +\ln x}{(x-1)^2} = \frac{-\sqrt{t} + \ln(1+\sqrt{t})}{t} \)}
+
+Soit \(x \in ]1;+\infty[\). On pose \(t = (x+1)^2 \):
+\begin{align*}
+    \frac{1-x + \ln x}{(x-1)^2} &= \frac{-(x-1) + \ln(\sqrt{(x-1)^2} + 1)}{(x-1)^2} \\
+    &= \frac{-\sqrt{t} + \ln(1 + \sqrt{t})}{t}
+\end{align*}
+
+\hrulefill % Horizontal line as a divider
+
+\subsubsection*{Montrer que \(( \forall x \in ] 1 ; +\infty [ \)), \(-\frac{1}{2} < \frac{-\sqrt{t} + \ln(1 + \sqrt{t})}{t} < \frac{-1}{2(1+\sqrt{t})} \)}
+
+Soit \(x \in ]1; +\infty[ \). On a \(x \in ] 1; +\infty [\) donc \(t \in ]0 ; \infty[ \).
+
+\[
+\text{On considère } h \text{ une fonction définie sur } ]0; +\infty[ \text{ par } h(x) = -\sqrt{x} + \ln(1 + \sqrt{x}).
+\]
+
+\[
+\text{On a } x \mapsto \sqrt{x} \text{ est dérivable donc continue sur } ]0 ; +\infty [
+\]
+
+\[
+\text{On a } x \mapsto \sqrt{x} + 1 \text{ est dérivable donc continue sur } ]0 ; +\infty [ 
+\]
+
+\[
+\text{or : } (\forall x \in ]0 ; +\infty[) : 1+\sqrt{x} > 0
+\]
+
+\[
+\text{Et } x \mapsto \ln x \text{ est dérivable donc continue sur } ]0 ; +\infty [ 
+\]
+
+\[
+\text{Donc } x \mapsto \ln(1+\sqrt{x}) \text{ est derivable donc continue sur } ] 0 ; + \infty [
+\]
+
+\[
+\text { Alors h : } x \mapsto - \sqrt{t}+\ln(1+\sqrt{x}) \text{ est derivable donc continue sur } ] 0 ; +\infty [
+\]
+
+\[
+\text {et puisque } [0 ; t] \subset [0;+\infty[ \text{ Pour tout t } \in ]0;\infty[
+\]
+
+\[
+\text { Or h est continue a droite en 0 (A justifier)}
+\] 
+
+\begin{itemize}
+    \item[\(\bullet\)] Montrons que \( h \) est continue à droite en 0.
+\end{itemize}
+
+Soit \(x \in ] 0; +\infty [\)
+\[
+\lim_{x \to 0^+ } h(x) = \lim_{x \to 0^+ } \ln (\sqrt {x} + 1 ) - \sqrt{x} = 0 \quad (\text{car } \lim_{x \to 0^+ } \ln (\sqrt {x} + 1 ) = 0 \text{ et } \lim_{x \to 0^+ } \sqrt{x} = 0)
+\]
+
+\((C/C)_{2}\) D'où \( h \) est continue à droite en 0.
+
+\hrulefill % Horizontal line as a divider
+ 
+
+\begin{itemize}
+    \item[$\bullet$] Pour tout \( t \in [0, +\infty[, \quad h \text{ est continue sur } [0, t]\).
+    
+    \item[$\bullet$] Pour tout \( t \in ]0, +\infty[, \quad h \text{ est dérivable sur } ]0, t[ \) avec \( (\forall x \in ]0, +\infty[) \)
+    \[
+    h'(x) = \frac{d}{dx} \left( -\sqrt{x} + \ln(1 + \sqrt{x}) \right) = -\frac{1}{2\sqrt{x}} + \frac{\frac{1}{2\sqrt{x}}}{1 + \sqrt{x}}
+    \]
+    \[\text{Donc d'après le TAF }(\exists c \in ]0;t[) \text{ tel que } h'(c)= \frac{f(t)-f(0)}{t}. \]
+    
+ \[\text{Alors } (\exists c \in ]0;t[) \text{ tel que } \frac{1}{2\sqrt{c}} + \frac{\frac{1}{2\sqrt{c}}}{1 + \sqrt{c}} = \frac{-\sqrt{t} + \ln(1 + \sqrt{t})}{t}.\]
+
+\end{itemize}
+
+\end{document}
