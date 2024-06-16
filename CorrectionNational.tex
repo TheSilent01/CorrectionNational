@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath} % for mathematical environments and symbols
+
+\title{Correction National 2024}
+\author{Yassine El Aidous}
+\date{\today} % Use \today to automatically use the current date
+
+\begin{document}
+
+\maketitle % This line is important to add this so that you can write the title, author, and date
+
+\begin{abstract}
+    Ce document sera une proposition de correction de l'examen national.
+\end{abstract}
+
+\tableofcontents % It's for the sections created later on
+
+\newpage
+
+\section{Exercice 1 : Analyse}
+
+On considère une fonction \( f \) définie sur \( [1, +\infty[ \) par :
+\[
+f(x) = 
+\begin{cases}
+    \frac{\ln x}{x^2 - 1} & \text{si } x > 1 \\
+    \frac{1}{2} & \text{si } x = 1
+\end{cases}
+\]
+Soit \( (C) \) la courbe représentative de la fonction \( f \) dans un repère orthogonal \( (O, \vec{\mathbf{i}}, \vec{\mathbf{j}}) \).
+
+\subsubsection*{1- Montrer que \( f \) est continue à droite en 1}
+
+Soit \( x \in ]1; +\infty[ \) % 'in' indicates membership
+
+\[
+\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} \frac{\ln x}{x^2 - 1} = \lim_{x \to 1^+} \frac{\ln x}{(x-1)(x+1)}
+\]
+
+\[
+= \lim_{x \to 1^+} \frac{\ln x}{x-1} \cdot \frac{1}{x+1} = 1 \cdot \frac{1}{2} = \frac{1}{2}
+\]
+
+\( \text{car : } \lim_{x \to 1^+} \frac{\ln x}{x-1} = 1 \)
+
+\subsubsection*{2 - Calculer \( \lim_{x \to +\infty} f(x) \) et interpreter graphiquement le resultat obtenu}
+    Soit \( x \in ]1;+\infty[ \)
+    \begin{align*}
+        \lim_{x \to +\infty} f(x) &= \lim_{x \to +\infty} \frac{\ln x}{x^2 - 1} \\
+        &= \lim_{x \to +\infty} \frac{\ln x}{x^2} \cdot \frac{1}{1 - \frac{1}{x^2}} \\
+        &= 0 \cdot 1 \\
+        &= 0
+    \end{align*}
+
+    \subsubsection*{Interpretation Graphique]}
+    \begin{align*}
+        & \text{La courbe } (C) \text{ admet une asymptote horizontale au voisinage de } +\infty \\
+        & \text{de direction l'axe des abscisses.}
+    \end{align*}
+    
+
+\end{document}
